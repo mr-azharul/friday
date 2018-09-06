@@ -1,0 +1,19 @@
+<ion-menu [content]="sidemenu">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let commands of commandCollection" (click)="onGoToCommand(commands)">
+        <ion-icon [name]="commands.icon" item-left class="hicon" padding></ion-icon>
+        <h2>{{commands.category | uppercase}}</h2>
+        <p>{{commands.example}}</p>
+      </button>
+    </ion-list>
+
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #sidemenu></ion-nav>

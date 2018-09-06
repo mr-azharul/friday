@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      {{ commands.category | uppercase}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 text-center>Commands You Can Give</h3>
+  <ion-card *ngFor="let command of commands.examples">
+    <ion-card-content>
+      {{ command.text }}
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

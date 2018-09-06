@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button menuToggle icon-only>
+        <ion-icon name="information-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center>
+      FRIDAY
+    </ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="onWriteInput()">
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--chat start here-->
+
+  <ion-card *ngFor="let input of inputs">
+    <ion-card-content>
+      {{ input }}
+    </ion-card-content>
+  </ion-card>
+
+  <!--chat end here-->
+
+
+  <ion-fab center bottom>
+    <button icon-only ion-fab class="micicon" (click)="startListening()">
+      <ion-icon name="mic"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

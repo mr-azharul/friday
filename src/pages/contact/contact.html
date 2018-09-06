@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only navPop>
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center>
+      FRIDAY
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--chat start here-->
+
+  <h1>Which One?</h1>
+  <ion-card *ngFor="let contact of list">
+    <ion-card-content *ngIf="contact.displayName" (click)="dial(contact.phoneNumbers[0].value)" tappable>
+      <h3>Name: {{ contact.displayName }}</h3>
+      <p>Phone: {{ contact.phoneNumbers[0].value }}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

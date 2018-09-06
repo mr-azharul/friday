@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only navPop>
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center>
+      FRIDAY
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--chat start here-->
+
+  <ion-card *ngFor="let nm of get">
+    <ion-card-content>
+      <h3>Name: {{ nm.name }}</h3>
+      <p>Rating: {{ nm.rating }}</p>
+      <p>Address: {{ nm.vicinity }}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
