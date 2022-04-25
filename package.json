@@ -60,7 +60,7 @@
     "cordova-plugin-file": "^6.0.1",
     "cordova-plugin-flashlight": "^3.2.0",
     "cordova-plugin-geolocation": "^4.0.1",
-    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-ionic-webview": "^2.2.0",
     "cordova-plugin-local-notification": "^0.9.0-beta.2",
     "cordova-plugin-network-information": "^2.0.1",
     "cordova-plugin-speechrecognition": "^1.2.0",
